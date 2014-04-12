@@ -6,7 +6,9 @@
  This Processing sketch creates a network visualization of the ITP List-Serve based on public emails. 
  
  The data file is not included to protect the privacy of ITP students. However, any data set can be swapped 
- in as long as the data file has the following information: thread ID #, name of sender, subject line
+ in as long as the data file has the following information: thread ID #, name of sender, subject line.
+ 
+ This sketch was created with help from Dan Shiffman, Adarsh Kosaru and Jer Thorpe.
  
  */
 
