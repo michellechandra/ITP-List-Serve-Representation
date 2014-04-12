@@ -5,11 +5,21 @@
  
  This Processing sketch creates a network visualization of the ITP List-Serve based on public emails. 
  
- The data file is not included to protect the privacy of ITP students. However, any data set can be swapped 
+ Inspiration for this project was derived from an ITP list-serve visualization created in 2007 by Joshusa Knowles.
+ 2007 Visualization can be viewed here: http://www.auscillate.com/itp/listview/
+ 
+ The data file for this sketch is not included to protect the privacy of ITP students. However, any data set can be swapped 
  in as long as the data file has the following information: thread ID #, name of sender, subject line.
  
- This sketch was created with help from Dan Shiffman, Adarsh Kosaru and Jer Thorpe.
+ Data used for this sketch was downloaded from my Gmail Account using this Python Gmail Library:
+ https://github.com/charlierguo/gmail/blob/master/README.md
+ Help in accessing my Gmail Data was provided by Adam Parrish.
  
+ This sketch was created with help from Dan Shiffman and Adarsh Kosaru. 
+ 
+ This sketch also uses code provided by Jer Thorpe in his Spring 2014 ITP Course, Data Art. 
+ Code provided by Jer can be found here: https://github.com/blprnt/dataart/tree/master/2_Text_and_Archive/Code/TextNetworks
+  
  */
 
 Table allStudents;  // ClassList Table
@@ -154,5 +164,9 @@ void draw() {
     s.createNetwork();  // Draw Sender Network in Circle
     s.createLinks();  // Draw conversation links between students
   }
+}
+
+void keyPressed() {
+  saveFrame("file######.jpg");
 }
 
